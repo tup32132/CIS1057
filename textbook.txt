@@ -1,0 +1,187 @@
+Notes for Textbook 
+
+    Chapter 0
+        Reasons to choose "cs"
+            you like to solve problems
+            you enjoy technology and being a lifelong learner
+            you have good communication skills 
+
+        Joys of the Craft
+            making things of your own design 
+            making things that are useful to others
+            fashioning complex puzzles to a system that works
+            always learning because the work is not repetitious
+            working in a tractable medium 
+
+        Difference between the majors
+            Computer Science
+                design and implement software
+                devising new ways to use pcs
+                develop effective ways to solve computing problems
+
+            Computer Engineering
+                the seign and construction of pcs and pc based systems
+                includes hardware, software, comms, and interactions between
+                embedded systems devices that have software and hardware, such as cell phones, music players, alarms, etc.
+
+            Computer Information Systems (Temple major is this)
+                integrate tech into business and other enterpirsies to manage information securely
+                understanding technical and organizational factors to get a competitive edge
+
+            Information Technology
+                meet demands of the userbase of software. 
+                ensure systems work properly, are secure and are maintained. 
+
+            Software Engineering
+                discipline of developing and maintaining large software systems
+                make systems viable for users for many years
+
+        Mixed Disciplines
+            Bioinformatics
+                for maintaining, analyzing, and storing bio data
+            
+            AI
+                study of system that can exhibit autonomous intelligences 
+                face recognition, handwriting, speech, nlp, etc.
+            
+            computer forensics
+                legal evidence on pcs and storage devices
+            
+            cryptology
+                practice of hiding information 
+            
+            mechatronics
+                combine mechanical engineering, electronic engineering, and SE to create advanced hybrid systems
+
+            End
+
+    Chapter 1
+    
+    computer: a machine that can receive, store, transform, and output data of all kinds
+
+    1.1 Brief History of Computers
+        first computer was built in 1930s by John Atanasoff and Clifford Berry to help studets with nuclear physics calculations
+
+        The first large scale electronic digitical pc called the ENIAC was completed in 1946 at UPenn, funded by the US Army. 
+        It was used to comput ballistics tables, predict weather and make atomic energy calcs.
+
+        The CPU (Central processing Unit) is a small silicon chip that contained the circuitry for the computer processor
+
+        personal pcs for one person, larger systems such as hotels banks use mainframers, which are larger and more reliable. 
+
+        Supercomputers are larger and faster for intens applications such as weather forecasting 
+
+        Hardware is all the equipment used to perform calculations such as the CPU, monitor, keyboard, mouse, printer, graphics card
+
+        Software is the programs that let us solve problems by giving the computer instructions. 
+
+        Programming used to be done with long strings of binary (0 or 1) numbers. C makes programming easier
+
+    1.2 Computer Hardware
+        Most computers have
+            main memory
+            secondary memory like flash drive, hard disks
+            CPU
+            input devices (keyboard, mouse)
+            output devices (screens, speakers)
+
+        The user will input data with an input device into a program contained in the main memory or storage of a computer which will then be manipulated by the CPU which can store the results back on the memory which can be displayed on the output device. 
+
+        Memory
+            memory cells: an individual sotrage location in memroy
+            
+            address of a memory cell: the position of a memory cell in a computers main memroy 
+
+            contents of a memory cell: the data stored in a cell, data or a program instruction
+
+            stored program concept: the ability of a pc to store program instruction in memory for execution 
+
+            memory cells are made up of small units. 
+
+            Byte: the amount of storage needed for a single character
+                The amount of these in each memory cell varies by computer 
+
+            Bits: a binary digit, 0 or 1
+                these make up bytes and is the smallest element a computer can deal with. 8 bits to each byte
+
+            data storage: setting individual bits of a memory cell to 0 or 1, destroying the previous contents of the cell
+
+            data retrieval: copying contents of a particular memory cell to another storage area for processing
+
+            Main Memory is composed of two types
+                Random Access Memory (RAM)
+                    Offers temportary storage of data, programs, and resutls
+                Read-Only Memory (ROM)
+                    main memory part that stores programs and data permanently
+                
+                volatile memory: memory whose contents disappear when the pc is turned off. RAM is volatile memroy. 
+            
+            Secondary storage: units such as flash drives or disks that retain data even when power is off 
+
+                disk: thin platter of mettal or plaster which data is represented by magnetized spots arranged in tracks
+
+                optical driveL device that uses a laser to access or store data on a CD or DVD. 
+
+                Flash drive: device that plugs into USB port stores data bits as trapped electrons
+
+                files: a named collection of data stores on a disk
+                
+                directory: list of names of files stored on a disk (folder)
+
+                subdirectory: a list of the names of files that relate to a particular topic
+        
+            petabyte > terabyte > gigabyte > megabyte > kilobyte > byte > bit 
+
+        CPU 
+            The CPU has two roles: coordinating all computer operations and performing arithmetic and logical operations on data
+
+            follow instructions on a program to determine what to do and controls signals to other pc componenets. 
+
+            fetching an instruction: retrieving instruction from main memory
+
+            the memory inside a CPU is called the register, for instructions actively being operated. 
+
+            multiprocessor is a computer with multiple CPUs for faster speeds
+
+        Input and Output devices
+            cursor: moving place marker on the screen
+
+            function keys: special keys on keyboard for particular operation (ex: refresh page as F5)
+
+            mouse/touchpad: input devices that move a cursor to select operations
+
+            icon: a picture that represnets an operation
+
+            the screen provides a tempory display, 
+
+            hard copy: printed version of info, you should print it out.
+
+        Computer Networks
+            computers are linked togehter in networks so they can communicate
+
+            Local area network (LAN): computers, printers, scanenrs, and storage devices connected by cables
+
+            file server: the computer in a network that controls access to a secondary storage device such as a hard disk
+
+            Wide area network (WAN): a network such as the itnernet that connects computers and LANS over a large geographic area
+            
+            The internet is the creation of the US defense ARPAnet project in 1969 which wanted to create a computer network that could operate ven if partially destroyed. 
+
+            World Wide Web: a part of the itnernet whose graphical user interfaces make associated network resources easily navigable. 
+
+            GUI: pictures and menus that are displayed to allow users to slect commands and data easier.
+
+            modem: device that converts binary data to analog signals that can be transmitted between computers and over telephone lines 
+
+            cable internet access: two way high speed transmission of internet data through two of the hundreds of channels over the coazzial cable that carries cable tv signals. 
+
+     1.3 Computer Software
+
+    Chapter 2
+
+    Chapter 3
+
+    Chapter 4
+
+    Chapter 5
+     
