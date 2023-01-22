@@ -163,7 +163,7 @@ Notes for Textbook
 
             file server: the computer in a network that controls access to a secondary storage device such as a hard disk
 
-            Wide area network (WAN): a network such as the itnernet that connects computers and LANS over a large geographic area
+            Wide area network (WAN): a network such as the internet that connects computers and LANS over a large geographic area
             
             The internet is the creation of the US defense ARPAnet project in 1969 which wanted to create a computer network that could operate ven if partially destroyed. 
 
@@ -173,11 +173,288 @@ Notes for Textbook
 
             modem: device that converts binary data to analog signals that can be transmitted between computers and over telephone lines 
 
-            cable internet access: two way high speed transmission of internet data through two of the hundreds of channels over the coazzial cable that carries cable tv signals. 
+            cable internet access: two way high speed transmission of internet data through two of the hundreds of channels over the coaxial cable that carries cable tv signals. 
 
      1.3 Computer Software
+        Operating System: software that controls interaction of user and computer hardware and manages the allocation of computer resources
 
-    Chapter 2
+        Operating System   
+            Loading the operating system into memory is called booting the computer
+                1. Communicate with the computer user; receiving commands and completing them
+                2. manage allocation of memory and processor time
+                3. collect inputs from keyboard mouse etc.
+                4. put program outputs on screen, printer, etc.
+                5. access data from secondary storage
+                6. write data to secondary storage
+
+            OS may also control access rights and authorizations
+
+        Application Software
+            applications are software that is used for a specific task such as word processing, accounting, database management, gaming, etc.
+
+            Users will purchasr software and download from the internet. Installation is making an application available by copying it to the hard drive
+
+        Computer Languages
+            Creating software requires writing instructions or a computer to execute. Altough machine language is binary code that is understood by a specific CPU. 
+
+            Assembly language: mnemonic code that correspond to machine language instructions
+
+            high-level language: machine-independent programming language that combines algebraic expression and English symbols. 
+
+            A high-level language needs to be translated to machine language. 
+
+            compiler: software translate a high level language to machine
+
+            source file: containing a program wirtten in a language; input for a compiler
+
+            syntax: rules of a programming language
+
+            object file: file of machine language instructions that is the output of the compiler. 
+
+            Programmer writes the code in a high level language, if the code has no syntax errors it will be compiled, saved as an object file and carried out. 
+
+            Linker program: software that combines object files and resolves cross-references to create an executbale program. 
+
+            integrated development environment (IDE): a package that combines a word processor, compiler, linker, loader, and tools for finding errors in syntax (ex: Vscode, VIM) 
+                An IDE will often use "build" to describe compiling and linking all in one.
+
+            input data: data values scanned by a program
+
+            program output: The lines displayed by a program (printf)
+
+    1.4 The Software Development Method
+        1. Specify the problem requirements
+            State the problem clearly and gain understanding.
+        2. Analyze the problem.
+            identify the inputs, the outputs, and any additional constraints. 
+            abstraction: the process of modeling a problem by extracting essential variables and their relationships
+        3. Design the algorithm to solve the problem.
+            develop a list of steps for solving a problem (algorithm) and verify it does what it intends to do.
+            top-down design: breakign a problem into its major subproblems and then solving those subproblems
+
+                common subproblems: 
+                    1. getting the data
+                    2. performing the computations
+                    3. displaying the results
+            
+            stepwise refinement: development of a detailed list of steps to solve a particular step in the algorithm
+            desk checking: a step-by-step simulation of the computer execution in an algorithm.
+
+        4. Implement the algorithm.
+            convert the algorithm steps into one or more statements in a programming language
+
+        5. Test and verify the completed program.
+            test the completed program using different datasets and check multiple instances to ensure it works for all cases.
+
+        6. Maintain and update the program.
+            modify programs to remove undetected errors and comply with regulations. Avoid shortcuts to ensure readability and working within company policy.
+
+    1.5 Applying the Software Development Method (no notes)
+
+    1.6 Professional Ethics for Computer Programmers
+        Privacy and Misuse of Data
+            Programming often means access to secret or sensitive data that cannot be made public.
+            A programmer who illegially obtained money by falsifying information in a databae is guilty of computer fraud
+
+        Computer Hacking
+            Hacking to access unauthorized sources to sell to other agencies. Liable to be prosecuted 
+            Attaching harmful code, called a virus, that spreads through a computers disk memory and disrupts the computer or erases information
+            A computer worm is a virus that multiplies itself on other network computers
+        
+        Plagiarism and Software Piracy
+            Using someone else's programs without permission is also unprofessional and can result in a lawsuit
+            Plagiarism in the same way you cannot copy other people's essays
+
+            Software piracy is copying software for use on a nother computer. It is unlawful and increases liklihood of getting a virus. 
+        
+        Misuse of a Computer Resource
+            Computer access is usually given for particular purpose, i.e. working on classwork. 
+            Should not loan to others or used for unintended purposes. 
+
+
+    Chapter 2: Overview of C
+    C was introduced in 1972 by Dennis Ritchie at AT&T Bell Labs. It was designed to write the UNIX operating system, originally used for systems programming. 
+
+    Its power and flexibility has lead it to be used for many different applications. 
+
+        2.1 C Language Elements 
+            Programs resemble everyday English. 
+                
+            Preprocessor Directives
+                Commands that begin with # that provide an instruction to the preprocessor
+
+                preprocessor: a system progrma that modifies a C program prior to compilation.
+
+                C explicitly defines only a couple of operations and needs libraries to be included for proper implementation.
+
+                library: a collection of useful functions and symbols that may be accessed by a program
+
+                constant macro: a name that is replaced by a particular constant value before the program is sent to a compiler
+
+                comment: text beginning with /* and ending with */ that provides supplemental info but will be ignored by the preprocessor and compiler
+
+            Syntax Displays for Preprocessor Directives
+                #include - tell preprocessor where to find the meaning of standard identifiers used in the program
+                #define - tell the processor a constant value to replace each name with.
+            
+            Function Main
+                every C program has a main function. The {} is the body of the function.
+                
+                The body contains two things: declarations and executable statements
+                    declarations: the part of a profram that tells the compiler the names of memroy cells in a program
+                    
+                    executable statements: the program lines that are converted to machine langauge instructions and executed by the computer
+
+            Reserved Words
+                reserved word: a word with special meaning in C
+                    examples include int, void, double, return
+            
+            Standard Identifiers
+                standard identifiers: a word having special meaning but one that a programmer may redefine (although this is not recommended)
+                    examples include printf, scanf
+
+            User-Defined Identifiers
+                Users are able to choose identifiers to name meory cells that hold data and results.
+                    1. identifier must consist of only letters, digits, and underscores
+                    2. Cannot begin with a digit
+                    3. A C reserved word cannot be used in an identifier
+                    4. an identifier defined in C standard library should not be redefined
+
+                Some ANSI C compilers do not consider two identifiers different if they do not become unique within the first 31 characters
+            
+            Uppercase and Lowercase Letters
+                case matters! Identifiers are case-sensitive so "RATE" and "rate" are completely different. 
+                
+                A widely adopted style in C is to use all uppercase letters in the names of constant macros, while using lowercase letters for all oter identifiers.
+
+            Program Style
+                Programs are going to be read by others a lot. Make them legible and easy to understand
+                    Pick meaningful names for identifiers
+                    Underscores help with readability for identifiers with multiple words
+                    dont choose names that are similar to each other to avoid typos
+            
+        2.2 Variable Declarations and Data Types
+            Variable Declarations
+                Variable: a name associated with a memory cell whose value can change
+
+                Variable Declarations: statements taht communicate to the compiler the names of vvariables in the program and the kind of information stores in each variable
+
+                Declarations start with a type of variable (int, double, float)
+
+                You must declare all variables in a C program!
+
+            Data Types 
+                A set of values and operations that can be performed on those values is a data type. 
+
+                objects of a data type can be variables or constants. 
+                    constants are always positive- the negation operator (-) acts on it and isn't considered part of the constant
+                
+                Data type int
+                    integers are whole numbers. Because memory cells are only so big, ANSI C specifies the range of the data type; values between -32767 to 32767
+                
+                Data type double
+                    doubles are real numbers with an integral part and a fractional part that are separated by a decimal point
+                    can be written in scientific notation
+                    
+                    This data type does not include all real numbers- some are too large or too small and others cannot be represented precisely. 
+                
+            Differences between Numeric Types
+                Why have more than one numeric type? Cant double just be used for integers?
+                    Integers can be processed faster due to less storage space
+                    integer operations are more precise, as doubles can be subjected to rounding error 
+
+                    The way doubles and ints are stored in binary strings also are different. 
+                        doubles take more bytes to store.
+                        Ints are represented by binary numbers (ex: 13 is 01101)
+
+                        doubles are represented in 3 parts
+                            sign is either 0 or 1, for postive or negative, respectively
+                            The mantissa is a binary fraction between .5 and 1.0
+                            The exponent is an integer
+                            real number = mantissa * 2^exponent
+                        
+                        doubles can represent any number from 10^-37 to 10^37
+                            absolute chonker numbers
+                        
+                        ANSI C also defines 3 types of floating-point types that differe in the their memory requirements; float, double, long double
+                            floats must have at least 6 decimal digits
+                            double and long double need 10 
+                        
+            Data Type char
+                characters are individual values- a letter, digit, or special symbol
+                    enclosed in apostrophes "a" "5"
+
+                characters are represented in memory as an integer. The value is stored as determined by the conpiler. 
+                    The ASCII code is the most common (The American Standard Code for Information Intervhange)
+                        Digit characters '0' to '9' are stored 48 - 57
+                        Uppercase characters are stored 65 - 90
+                        lowercase letters are 97 - 122
+                        all printable characters (including space ' ' and asterisk '*') are 32 - 126 ('~')
+                
+        2.3 Executable Statements
+            Executable statements are the ones used to write or code the algorithm and its refinements 
+
+            Programs in Memory  
+                Prior to running a program, the memory cells are labelled "?" and are not defined. 
+                After running, those values will be replaced with the ones used in the program. 
+
+            Assignment Statements
+                An instruction that stores a value or computational result in a variable is an assignment statement
+                The = is the assignment operator in C
+                x = x + 1 will remove the previous value of x and replace it with x + 1
+
+            Assignment to char Varibale
+                pretty easy, just use the = and assign.
+                next_letter = 'A'
+
+            Input/Output Operations and Functions
+                input operation: an instruction that copies data from an input device into memory
+
+                output operation: an instruction that displays information stored in memory
+
+                input/output function: a C function that performs an input or output function
+
+                Most common input is scanf()
+                Most common output is printf()
+
+                functionall: calling or activating a function
+            
+            The printf() Function
+                the function call consists of two parts; the function name and argument
+                    function argument: enclosed in parentheses following the function name, provides info needed by the function
+                        format string: in a call to printf, a string of characters in quotes which specifies the form of the output line
+                        print list: in the printf call, the variables whose values are displayed
+                        placeholder: a symbol beginning with % in a format string that indicates where to display the output value
+                        newline escape sequence: \n, which is used to terminate an output line and move to the next line in a format string. 
+
+                    multiple placeholders
+                        for each variable in the print list, there needs to be a placeholder. They will be matched in left to right order
+
+                    \n
+                        cursor: a moving place marker that indicates the next position on the screen where information will be displayed
+
+                        can use \n in the middle of lines, to end, and to start lines
+
+                    displaying prompts
+                        printf is perfect for displaying prompts
+                            prompt: a message displayed to indicate what data to enter and in what form
+            
+            The scanf() function    
+                scanf() calls to copy data into the a variable from an input device. 
+                
+                use a placeholder such as %lf to show what data type is going to be entered.
+
+                You will need to use the & character, which is the address character, prior to the variable to be collected. 
+                    The & is the address-of operator  and tells scanf where to find each variable 
+                
+            The return Statement
+                the return (0); brings control from the program to the OS
+                    the 0 is considered the result of the function "main"'s execution, which indicates it ran without error
+                    
+
+
+
+            
 
     Chapter 3
 
