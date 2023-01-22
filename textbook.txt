@@ -20,7 +20,7 @@ Notes for Textbook
                 develop effective ways to solve computing problems
 
             Computer Engineering
-                the seign and construction of pcs and pc based systems
+                the design and construction of pcs and pc based systems
                 includes hardware, software, comms, and interactions between
                 embedded systems devices that have software and hardware, such as cell phones, music players, alarms, etc.
 
@@ -60,16 +60,16 @@ Notes for Textbook
     computer: a machine that can receive, store, transform, and output data of all kinds
 
     1.1 Brief History of Computers
-        first computer was built in 1930s by John Atanasoff and Clifford Berry to help studets with nuclear physics calculations
+        first computer was built in 1930s by John Atanasoff and Clifford Berry to help students with nuclear physics calculations
 
         The first large scale electronic digitical pc called the ENIAC was completed in 1946 at UPenn, funded by the US Army. 
-        It was used to comput ballistics tables, predict weather and make atomic energy calcs.
+        It was used to compute ballistics tables, predict weather and make atomic energy calcs.
 
         The CPU (Central processing Unit) is a small silicon chip that contained the circuitry for the computer processor
 
-        personal pcs for one person, larger systems such as hotels banks use mainframers, which are larger and more reliable. 
+        personal pcs for one person, larger systems such as hotels banks use mainframes, which are larger and more reliable. 
 
-        Supercomputers are larger and faster for intens applications such as weather forecasting 
+        Supercomputers are larger and faster for intense applications such as weather forecasting 
 
         Hardware is all the equipment used to perform calculations such as the CPU, monitor, keyboard, mouse, printer, graphics card
 
@@ -88,9 +88,9 @@ Notes for Textbook
         The user will input data with an input device into a program contained in the main memory or storage of a computer which will then be manipulated by the CPU which can store the results back on the memory which can be displayed on the output device. 
 
         Memory
-            memory cells: an individual sotrage location in memroy
+            memory cells: an individual storage location in memory
             
-            address of a memory cell: the position of a memory cell in a computers main memroy 
+            address of a memory cell: the position of a memory cell in a computers main memory 
 
             contents of a memory cell: the data stored in a cell, data or a program instruction
 
@@ -118,13 +118,13 @@ Notes for Textbook
             
             Secondary storage: units such as flash drives or disks that retain data even when power is off 
 
-                disk: thin platter of mettal or plaster which data is represented by magnetized spots arranged in tracks
+                disk: thin platter of metal or plaster which data is represented by magnetized spots arranged in tracks
 
-                optical driveL device that uses a laser to access or store data on a CD or DVD. 
+                optical drive: device that uses a laser to access or store data on a CD or DVD. 
 
                 Flash drive: device that plugs into USB port stores data bits as trapped electrons
 
-                files: a named collection of data stores on a disk
+                files: a named collection of data stored on a disk
                 
                 directory: list of names of files stored on a disk (folder)
 
@@ -150,14 +150,14 @@ Notes for Textbook
 
             mouse/touchpad: input devices that move a cursor to select operations
 
-            icon: a picture that represnets an operation
+            icon: a picture that represents an operation
 
-            the screen provides a tempory display, 
+            the screen provides a temporary display, 
 
             hard copy: printed version of info, you should print it out.
 
         Computer Networks
-            computers are linked togehter in networks so they can communicate
+            computers are linked together in networks so they can communicate
 
             Local area network (LAN): computers, printers, scanenrs, and storage devices connected by cables
 
@@ -165,11 +165,11 @@ Notes for Textbook
 
             Wide area network (WAN): a network such as the internet that connects computers and LANS over a large geographic area
             
-            The internet is the creation of the US defense ARPAnet project in 1969 which wanted to create a computer network that could operate ven if partially destroyed. 
+            The internet is the creation of the US defense ARPAnet project in 1969 which wanted to create a computer network that could operate even if partially destroyed. 
 
-            World Wide Web: a part of the itnernet whose graphical user interfaces make associated network resources easily navigable. 
+            World Wide Web: a part of the internet whose graphical user interfaces make associated network resources easily navigable. 
 
-            GUI: pictures and menus that are displayed to allow users to slect commands and data easier.
+            GUI: pictures and menus that are displayed to allow users to select commands and data easier.
 
             modem: device that converts binary data to analog signals that can be transmitted between computers and over telephone lines 
 
@@ -192,7 +192,7 @@ Notes for Textbook
         Application Software
             applications are software that is used for a specific task such as word processing, accounting, database management, gaming, etc.
 
-            Users will purchasr software and download from the internet. Installation is making an application available by copying it to the hard drive
+            Users will purchase software and download from the internet. Installation is making an application available by copying it to the hard drive
 
         Computer Languages
             Creating software requires writing instructions or a computer to execute. Altough machine language is binary code that is understood by a specific CPU. 
@@ -205,7 +205,7 @@ Notes for Textbook
 
             compiler: software translate a high level language to machine
 
-            source file: containing a program wirtten in a language; input for a compiler
+            source file: containing a program written in a language; input for a compiler
 
             syntax: rules of a programming language
 
@@ -213,7 +213,7 @@ Notes for Textbook
 
             Programmer writes the code in a high level language, if the code has no syntax errors it will be compiled, saved as an object file and carried out. 
 
-            Linker program: software that combines object files and resolves cross-references to create an executbale program. 
+            Linker program: software that combines object files and resolves cross-references to create an executable program. 
 
             integrated development environment (IDE): a package that combines a word processor, compiler, linker, loader, and tools for finding errors in syntax (ex: Vscode, VIM) 
                 An IDE will often use "build" to describe compiling and linking all in one.
@@ -301,7 +301,7 @@ Notes for Textbook
                 every C program has a main function. The {} is the body of the function.
                 
                 The body contains two things: declarations and executable statements
-                    declarations: the part of a profram that tells the compiler the names of memroy cells in a program
+                    declarations: the part of a profram that tells the compiler the names of memory cells in a program
                     
                     executable statements: the program lines that are converted to machine langauge instructions and executed by the computer
 
@@ -337,7 +337,7 @@ Notes for Textbook
             Variable Declarations
                 Variable: a name associated with a memory cell whose value can change
 
-                Variable Declarations: statements taht communicate to the compiler the names of vvariables in the program and the kind of information stores in each variable
+                Variable Declarations: statements that communicate to the compiler the names of variables in the program and the kind of information stores in each variable
 
                 Declarations start with a type of variable (int, double, float)
 
@@ -417,7 +417,7 @@ Notes for Textbook
                 Most common input is scanf()
                 Most common output is printf()
 
-                functionall: calling or activating a function
+                function call: calling or activating a function
             
             The printf() Function
                 the function call consists of two parts; the function name and argument
@@ -451,10 +451,70 @@ Notes for Textbook
                 the return (0); brings control from the program to the OS
                     the 0 is considered the result of the function "main"'s execution, which indicates it ran without error
                     
-
-
-
+        2.4 General Form of a C Program
+                Begin with preprocessor Directives
+                define the main function and provide declarations of all variables to be used
+                add statements that are translated to machine language and will be executed
+                one statement per line to improve readability
             
+            Program Style
+                Spaces in programs are useful. The compiler ignores extra space and lines between words and symbols but they are helpful for readability. 
+                always leave spaces after commas, before and after operators and indent the body of main
+
+            Comments in a Program  
+                program documentation: ifo that enhances understandability of a program
+                it is helpful to comment throughout code to explain variables, unique functions, etc.
+
+            Program Style (Using Comments)
+                Each program should begin with a header that specifies: 
+                    Programmer name
+                    date of current version
+                    a brief program description
+                    course number/instructor if for a class assignment
+
+                Before each step in the initial algorithm, write a comment that summarizes the algorithm step
+
+        2.5 Arithmetic Expressions
+            You can manipulate values using +,-,*,/, and %
+                % is for calculating remainder (7 % 2 = 1) 
+
+                m = (m/n)*n + (m%n)
+            
+            Data Type of an Expression
+                the data type of an expression is the result of the data type of its' operands
+                    int must be operands both are also int, otherwise its a double
+                        mixed-type expression: an expression with operands of different types
+            
+            Mixed-Type Assignment Statement 
+                mixed-type assignment: the expression being evaluated and the variable being assigned have different data types
+            
+            Type Conversion Through Casts
+                type cast: converting an expression to a different type by writing the desired type in parentheses in front of the expression
+
+            Characters as Integers  
+                Since each character has an ASCII integer value, you can convert characters and integers.
+
+            Expressions with Multiple operators 
+                Unary operators: only one operand. Ex: - or +
+                Binary operators: Take two operands. Ex: a + b, a * b
+
+                PEMDAS dont forget rules.
+
+            Writing Mathematical Formulas in C
+                must always use * operator
+                parentheses help with division since they have to be on the same line.
+
+            Numerical Inaccuracies
+                representational error: an error due to coding a real number as a finite number of digits
+                    aka round off errors
+                
+                cancellation error: an error resulting from applying an arithmetic operation to operands of vastly different magnitudes- the effect of the smaller operand is lost. 
+
+                arithmetic underflow: If the result of an operation is so small sometimes it will get lost and represented as zero. 
+
+                arithmetic overflow: If the result is too big it can also get lost.
+
+                A lot of this depends on your compiler. 
 
     Chapter 3
 
