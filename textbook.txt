@@ -516,7 +516,57 @@ Notes for Textbook
 
                 A lot of this depends on your compiler. 
 
-    Chapter 3
+        2.6 Formatting Values of Type int
+            field width: the number of columns used to display a value
+
+            Formatting Values of Type double   
+                need field width as well as number of decimal places to incldue. 
+                    %6.2f means that x will be displayed to the accuracy of 2 decimal places in 6 columns. 
+
+                    it will use normal rounding rules.
+
+            Program Style- Eliminating Leading Blanks
+                you should not have leading blanks for fun, get rid of them if you don't need them.
+
+        2.7 Interactive Mode, Batch Mode, and Data files   
+                    interactive mode: a mode of program execution where the user types in data to respond to prompts
+
+                    bath mode: a mode of program execution in which the program scans data from a previously prepared data file 
+
+                Input Redirection
+                    You are able to use the command line to instruct a program to where it can find the data it needs   
+                        in UNIX, using <mydata.txt at the end of a command line would tell your program to find the data there.
+
+                Program Style Echo Prints versus prompts
+                    Using an echo print to replace any prompts for a batch file is a good way to make sure your scanf worked properly
+
+                Output Redirection  
+                    You can also redirect outputs to a file instead of a screen if thats ideal for You
+                    >myoutput.txt at the end of a command would give you the output in a dandy little text file
+
+        2.8 Common Programming errors
+                debugging: removing errors from a program
+
+            Syntax errors   
+                syntax error: when the program violates a grammar rule of C and it is detected by the compiler as it attempts to translate
+
+            Run-Time errors 
+                run-time errors: an attempt to perform an invaldi operation detected during program execution
+            
+            Undetected Errors:
+                some errors do not cause a C program to break. 
+                    You should be able to predict the result of your C program so if you do not get that, you can question the code
+                
+                A common error is the input of character and numeric data. Make sure you notice the different treatment of characters by scanf and ensure you run things properly
+
+            Logic Errors    
+                Usually due to an incorrect algorithm. 
+                    always make sure your algorithm makes sense before it is typed into C.
+
+
+    Chapter 3 Top-Down Design with Functions
+    
+        3.1  Building Programs from Existing Information
 
     Chapter 4
 
