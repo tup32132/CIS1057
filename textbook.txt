@@ -567,8 +567,156 @@ Notes for Textbook
     Chapter 3 Top-Down Design with Functions
     
         3.1  Building Programs from Existing Information
+            Programmers generally don't start with a blank slate and will build off existing programs or public access.
 
-    Chapter 4
+            This section is mostly example code similar to Assignment 1.
+             
+        3.2 Library Functions   
+            Predefined functions and code reuse 
+                "why reinvent the wheel?"
+                C code has predefined functions available in libraries such as math.h and stdio.handwriting
+                 
+        3.3 Top-Down Design and Structure Characters   
+                top-down design: a problem solving method which involves breakign a provlem into major subproblems to derive the solution to the original problem
+                structure chart: a documentation tool that shows the relationships among the subproblems of a problem
+
+        3.4 Functions Without Arguments
+            Defining your own functions is a way of doing top-down design
+            Function Prototypes
+                Just like identifiers, a function must be declared before being referenced. 
+                    One way to do so is to insert a function prototype before the main function.   
+                        The prototype tells the C compiler the data type of the function, its name and info about the args expected.
+
+                    void functions: a function that does not return a value.
+                        ex: void draw_circle(void)
+                            this means the function expects no args and will not return a value.
+
+            Function Definitions
+                Prototypes specify the arguments needed, but they do not specify the operation.
+                    That is what the definition is for. 
+                        The definition is the part in the braces which allows for operations to be conducted.
+                            Void functions have no "return" value
+            
+            Placement of Functions in a Program 
+                subprograms prototype typically preceed the main() function in a program while the definitions follow the main function
+
+            Program Style (Use of Comments in a Program with Functions)
+                each function should have a comment that describes its' purpose 
+            
+            Order of Execution of Function subprograms and Main Function    
+                The prototype being ahead of the main function allows the compiler to translate a call to that function
+                    The compiler will run the subprogram and pick back up in the main until the end of main or another function call. 
+            
+            Advantages of Using Function subprograms    
+                Easier to organize things, simplify compelx probelsm
+                    procedural abstraction: the main might just have easy functions that are broken down into their subprograms.
+                        A programming texhnique in which a main function consists of a sequence of function calls and each function is implemented separately.
+                        We can also reuse subprograms multiple times in the same program. 
+            
+            Displaying User instructions    
+                Subprograms can be used for displaying user instructions like in the header function for your lab assignments.
+
+        3.5 Functions with Input Arguments  
+                input arguments: arguments used to pass information into a function subprogram
+                output arguments: arguments used to return results to the calling function
+
+                void Functions with Input arguments
+                    actual argument: an expression inside the parenthesis of a function call
+                    formal parameter: an identifier that represents a corresponding actual argument in a function definition
+
+                Function with input arguments and a single result
+                    (data type)function (args) will put out one result of the assigned data type
+                    double find_circum(double radius)
+
+                Program Style (Function Interface Comment)
+                    precondition: a condition assumed to be true before a function call
+                    postcondition: a condition assumed to be true after a function call
+
+                    It is normal to include these statements in a function prototype to help with clarity
+
+                Functions with Multiple arguments
+                    Multiple arguments can be assigned and used
+                
+                Argument List Correspondence
+                    You always have to include the correct number of args in a function call and they must be in the correct order
+                        assignment of actual args to the formal parameter also should not result in any loss of info. 
+                
+                The Function Data area  
+                    The function call will make all args and local variables used in it. 
+                        All of these will be lost when the function terminates which allows for its reuse
+
+                Testing Functions Using Drivers
+                    driver: a short function written to test another function by defining its arguments, calling it, and displaying its results
+        
+        3.6 Introduction to Computer Graphics (optional)
+                text mode: a display mode in which a C program displays only characters
+                graphics mode: a display mode in which C programs draw graphics patterns and shapes in an output window
+
+                Many languages have graphics libraries. C does not have a standard one but many have been developed. 
+                    This text teached WinBGIm
+                
+                Composition of a window
+                    pixel: a picture elements on a computer screen
+                        (0,0) is the top left corner of a screen.
+                    
+                Some Common Graphics Functions
+                    getmaxwidth() get maxheight() will return display size
+                
+                You will need to include graphics.h at the preproccessor Directives
+                    getch() is a function that pauses the program until the user presses a key 
+                
+                Program Style (Camelback Notation)
+                    in graphics sections, we tend to use camelback notation for variables. 
+                        bigX vs big_x 
+                        myLastName vs my_last_name
+                
+                Background Color and Foreground Color
+                    black and white are the default values for background and foreground respectively
+                        background color: default color for all pixels in a display window
+                        foreground color: new color of pixels that are part of a graphics object in a display window
+
+                    you can use setbkcolor() and setcolor() to set different default colors for background and foreground
+                
+                Drawing Rectangles 
+                    use rectangle(x1, y1, x2, y2); for Rectangles
+                
+                Drawing Circles, Ellipses, and Arcs
+                    you can use circle(x, y, radius); 
+                                arc( x, y, 0, 180, radius); where 0 and 180 are the starting and ending angle of the arc.
+                                ellipse(x, y, 0, 360, radius, 2 * radius) where 2*radius is the vertical radius.
+                
+                Program Style (Writing General Graphics Programs)
+                    generally it is best to use general graphics over fixed graphics so it can be displayed in various windows
+                        it is easy to do. Just use getmaxY and getmaxX and divide by a value to get the fixed value you want. That way at different max you still get the same image.
+
+                    Drawing Filled Figures
+                        setfillstyle() set fill pattern to red slahes until you change it with another function call. 
+                        floodfill(x , y , COLOR) will use fill pattern already determined on an area of the screen containing point (x,y) bounded by white linges. 
+                        bar() is the rectangle() function but it created a solid filled rectangle instead. 
+                    
+                Program Pitfall (Incorrect Order of Function Calls Draws Over Earlier Results)
+                    Order of Execution is very important all the time.
+                        if you call functio bar before caling flood fill, floodfill will overwrite the bar color, 
+                
+                Pie Slices and Filled Ellipses  
+                    pieslice() will filled a section of a circle
+                    fillellipse() draws filled ellipse or circle
+
+                Adding Text to Drawings
+                    in graphics mode you cannot use printf you have to draw them 
+                    outtextxy(getmaxx()) / 3, getmaxy() - 20, "PIRATE WITH AN EYEPATCH");  
+                        draws each character in a string starting at the pixel whos x-y coordinates are speicified in first two parameters. 
+            
+            3.7 Common Programming Errors   
+                always remember #include in your preproccessor Directives  
+
+                remember the acronym NOT
+                    Number of arguments
+                    Order of arguments
+                    Type of data
+
+    Chapter 4 Selection Structures: if and switch statements
+
 
     Chapter 5
      
