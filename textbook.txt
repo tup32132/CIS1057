@@ -254,7 +254,7 @@ Notes for Textbook
     1.6 Professional Ethics for Computer Programmers
         Privacy and Misuse of Data
             Programming often means access to secret or sensitive data that cannot be made public.
-            A programmer who illegially obtained money by falsifying information in a databae is guilty of computer fraud
+            A programmer who illegally obtained money by falsifying information in a databae is guilty of computer fraud
 
         Computer Hacking
             Hacking to access unauthorized sources to sell to other agencies. Liable to be prosecuted 
@@ -301,7 +301,7 @@ Notes for Textbook
                 every C program has a main function. The {} is the body of the function.
                 
                 The body contains two things: declarations and executable statements
-                    declarations: the part of a profram that tells the compiler the names of memory cells in a program
+                    declarations: the part of a program that tells the compiler the names of memory cells in a program
                     
                     executable statements: the program lines that are converted to machine langauge instructions and executed by the computer
 
@@ -376,7 +376,7 @@ Notes for Textbook
                         doubles can represent any number from 10^-37 to 10^37
                             absolute chonker numbers
                         
-                        ANSI C also defines 3 types of floating-point types that differe in the their memory requirements; float, double, long double
+                        ANSI C also defines 3 types of floating-point types that differ in the their memory requirements; float, double, long double
                             floats must have at least 6 decimal digits
                             double and long double need 10 
                         
@@ -531,7 +531,7 @@ Notes for Textbook
         2.7 Interactive Mode, Batch Mode, and Data files   
                     interactive mode: a mode of program execution where the user types in data to respond to prompts
 
-                    bath mode: a mode of program execution in which the program scans data from a previously prepared data file 
+                    batch mode: a mode of program execution in which the program scans data from a previously prepared data file 
 
                 Input Redirection
                     You are able to use the command line to instruct a program to where it can find the data it needs   
@@ -574,7 +574,7 @@ Notes for Textbook
         3.2 Library Functions   
             Predefined functions and code reuse 
                 "why reinvent the wheel?"
-                C code has predefined functions available in libraries such as math.h and stdio.handwriting
+                C code has predefined functions available in libraries such as math.h and stdio.h 
                  
         3.3 Top-Down Design and Structure Characters   
                 top-down design: a problem solving method which involves breakign a provlem into major subproblems to derive the solution to the original problem
@@ -717,6 +717,128 @@ Notes for Textbook
 
     Chapter 4 Selection Structures: if and switch statements
 
+      if and switch statements select one statement group out of a group of alternatives
+       
+        4.1 Control Structures
+            control stucture: a combo of individual instructions into a single logical unit with one entry and exit point
+                these are separated into three types of control structures responsible for execution follow
+                    sequence
+                    selection
+                    repitition
+           
+            compound statement: a group of statements bracketed by {} that are executed sequentially.
+                selection control structure: a control structure that chooses among alternative program statements
 
+        4.2 Conditions
+            a program chooses among alternative statements by testing the value of key variables    
+               
+            condition: an expression that is either false (0) or true (1)
+
+            Relational and Equality operators  
+                < > <= >= == !=
+               
+            Logical operators  
+                logical expressions: an expression taht uses one or more of the logical operators && || !
+
+                logical complement: the complemenet of a condition has the value (1) when the condition is (0)
+                    also called negation  
+                   
+            Operator Precedence
+                unary operator: an operator with one operand
+               
+            Short-Circuit Evaluation
+                an expression will short circuit when the computer already knows the outcome.
+                    for example for a || b when a is true, b will not be evaluateed since true || b is always true.
+
+            Writing English Conditions in C
+                min <= x >= is good for Ranges
+
+            Comparing Characters  
+                since characters has the ASCII integer value, they can be used with equality operators.
+           
+            Logical Assignment  
+                mostly examples.
+           
+            Complementing a Condition
+                DeMorgan's Theorem
+                    The complement of a && b is writen as comp || comp2 where comp is the complement of a and comp2 is the complement of b
+                    The complement of a || b is written as comp1 && comp2 where comp1 is the complement of a and comp2 is the complement of b.
+
+        4.3 The if Statement    
+            if is the primary selection control structure
+
+            if Statement with Two alternatives
+                flowchart: a diagram that shows the step by step execution of a control structure
+           
+            if statement with one alternative  
+                if with no "else" means that it will not run if the expression is not true.
+
+            A comparison of One and Two Alternative if Statements  
+
+            4.4 if statements with Compound statements  
+                if the if statement has multiple expressions in the {} they will all be run if true and all be skipped if false
+
+            4.5
+                Tracing an if statement
+                    hand trace: step by step simulation of an algorithms execution
+                    pseudocode: a combo of English phrases and C constructs to describe algorithm steps
+               
+                Program Style Use of Names, Cohesive Functions, Using constant macros
+                    use the same name for variables that are the same in different functions to keep things orderly
+
+                    cohesive functions: a function that performs a single operation.
+                        they are easier to understanding and debug.
+
+                    using constant macros in functions is good
+                        easier to understand with descriptive names
+                        easier to maintain- just switch out the macro instead of the number in each function call.
+
+            4.6 More Problem solving
+kkinney18@bw.edu
+                Data Flow Information in Structure Charts
+                    if a step gives a new value to a varibale it is an output of the step.
+                    if a step uses a variables value to display or make a calculation, it is an input.
+
+                Modifying a Program with Function Subprograms
+                    try to reuse old programs that work so you arent starting from ground zero every time
+           
+            4.7 Nested if Statements and Multiple-Alternative Decisions
+                nested if statements: an if statement within another if statement as its true or false task
+
+                Multiple-Alternative decision Form of Nested if
+                    nested if statements can get kinda wild
+                        make sure they are easy to follow with indentation
+
+                Order of Conditions in a Multiple-Alternative Decision
+                    once one is executed it stops so you must be careful with order.
+
+                Program Style Validating the Value of variables
+                    you can use nested ifs to create error messages see pg 232
+               
+                Nested if Statements with More Than One Variable
+                    Kind of tricky. Many examples in text. pg 236
+               
+            4.8 The switch statements
+                these statments are used to select one of several alternatives
+                    If the expression matches the given condition then it will do one of many possible outcomes
+               
+                Comparison of Nested if Statements and the switch Statement
+                    nested if can do some of the switch statements
+                        lots of values use nested if
+                        if its less then try a switch
+           
+            4.9 Common Programming Errors
+                be careful with (0<= x <= 4) type things
+                x == 5 would be true because 0<= x) is 1 and therefore true
+                remember the double ==
+                parenthesize with {} for the argument of the condition.
+
+                try to use multipel alternative format when possible too.
+
+                break statements for the switch statement to make it work correctly.
+
+        
     Chapter 5
      
+
+
